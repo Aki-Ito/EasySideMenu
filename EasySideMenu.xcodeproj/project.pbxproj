@@ -16,6 +16,7 @@
 		2C5C90CB276B5FC100D96CF3 /* EasySideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C90CA276B5FC100D96CF3 /* EasySideMenuTests.swift */; };
 		2C5C90D5276B5FC100D96CF3 /* EasySideMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C90D4276B5FC100D96CF3 /* EasySideMenuUITests.swift */; };
 		2C5C90D7276B5FC100D96CF3 /* EasySideMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C90D6276B5FC100D96CF3 /* EasySideMenuUITestsLaunchTests.swift */; };
+		2C5C90E4276B626E00D96CF3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C90E3276B626E00D96CF3 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2C5C90D0276B5FC100D96CF3 /* EasySideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5C90D4276B5FC100D96CF3 /* EasySideMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuUITests.swift; sourceTree = "<group>"; };
 		2C5C90D6276B5FC100D96CF3 /* EasySideMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C5C90E3276B626E00D96CF3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2C5C90BC276B5FC000D96CF3 /* Assets.xcassets */,
 				2C5C90BE276B5FC000D96CF3 /* LaunchScreen.storyboard */,
 				2C5C90C1276B5FC000D96CF3 /* Info.plist */,
+				2C5C90E3276B626E00D96CF3 /* MenuViewController.swift */,
 			);
 			path = EasySideMenu;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				2C5C90B8276B5FBB00D96CF3 /* ViewController.swift in Sources */,
 				2C5C90B4276B5FBB00D96CF3 /* AppDelegate.swift in Sources */,
 				2C5C90B6276B5FBB00D96CF3 /* SceneDelegate.swift in Sources */,
+				2C5C90E4276B626E00D96CF3 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
