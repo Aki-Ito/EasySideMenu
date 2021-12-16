@@ -43,8 +43,28 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-kz-AC7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="896"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-rn-IvK">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="896"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9I6-m3-Stx">
+                                                <rect key="frame" x="0.0" y="44.5" width="240" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9I6-m3-Stx" id="fh8-Ca-hHw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="RJg-rn-IvK" firstAttribute="leading" secondItem="qAL-kz-AC7" secondAttribute="leading" id="AgZ-Ky-rLH"/>
+                                    <constraint firstAttribute="bottom" secondItem="RJg-rn-IvK" secondAttribute="bottom" id="V8c-ZO-o0k"/>
+                                    <constraint firstAttribute="trailing" secondItem="RJg-rn-IvK" secondAttribute="trailing" id="XZG-fs-7aM"/>
+                                    <constraint firstItem="RJg-rn-IvK" firstAttribute="top" secondItem="qAL-kz-AC7" secondAttribute="top" id="tPm-bQ-JTP"/>
                                     <constraint firstAttribute="width" constant="240" id="twI-Wf-gec"/>
                                 </constraints>
                             </view>
@@ -59,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="menuView" destination="qAL-kz-AC7" id="LH9-V8-DLz"/>
+                        <outlet property="tableView" destination="RJg-rn-IvK" id="yDb-sW-hlW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ut-aK-hCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

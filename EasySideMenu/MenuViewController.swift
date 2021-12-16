@@ -11,6 +11,7 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var menuView: UIView!
     
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +21,9 @@ class MenuViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         let menuPos = self.menuView.layer.position
         self.menuView.layer.position.x = -self.menuView.frame.width
         
@@ -28,6 +32,7 @@ class MenuViewController: UIViewController {
                        options:.curveEaseOut,
                        animations: {self.menuView.layer.position.x = menuPos.x},
                        completion: {bool in})
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,4 +60,15 @@ class MenuViewController: UIViewController {
      }
      */
     
+}
+
+extension MenuViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        return cell
+    }
 }
